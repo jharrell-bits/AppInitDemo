@@ -1,9 +1,8 @@
-using AppInitDemo.Initialize;
 using AppInitDemo.Initializers;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// call ResourceInitializer.Init, this is intuitive and fairly simple
+// call ResourceInitializer.Init()
 ResourceInitializer.Init(builder);
 
 // call an extension method in Intializers/ServiceCollectionExtensions

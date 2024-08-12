@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace AppInitDemo.Initialize
+namespace AppInitDemo.Initializers
 {
     public static class ResourceInitializer
     {
@@ -10,6 +10,7 @@ namespace AppInitDemo.Initialize
         /// <param name="builder">WebApplicationBuilder</param>
         public static void Init(WebApplicationBuilder builder)
         {
+            // perform some Resource configuration as an example
             builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 
             var supportedCultures = new List<CultureInfo> { new CultureInfo("en-US") };
