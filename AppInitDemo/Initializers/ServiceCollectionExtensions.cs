@@ -28,15 +28,15 @@ namespace AppInitDemo.Initializers
             // just do some stuff here as an example
             services.AddAntiforgery(options =>
             {
-                options.HeaderName = "InitializeCleanupDemo";
-                options.Cookie.Name = "InitializeCleanupDemo";
+                options.HeaderName = "AppInitDemo";
+                options.Cookie.Name = "AppInitDemo";
                 options.Cookie.SameSite = SameSiteMode.Strict;
                 options.Cookie.HttpOnly = false;
                 options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
             });
 
             services.AddDataProtection()
-                .SetApplicationName("InitializeCleanupDemo");
+                .SetApplicationName("AppInitDemo");
         }
     }
 }
