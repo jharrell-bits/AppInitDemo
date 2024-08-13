@@ -5,10 +5,10 @@ var builder = WebApplication.CreateBuilder(args);
 // call ResourceInitializer.Init()
 ResourceInitializer.Init(builder);
 
-// call an extension method in Intializers/ServiceCollectionExtensions
+// call an extension method in Initializers/ServiceCollectionExtensions
 builder.Services.AddCustomServices();
 
-// call an extension method in Intializers/ServiceCollectionExtensions
+// call an extension method in Initializers/ServiceCollectionExtensions
 builder.Services.AddCustomSecurity();
 
 // Add services to the container.
